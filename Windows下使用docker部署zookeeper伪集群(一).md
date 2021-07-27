@@ -21,8 +21,8 @@ Digest: sha256:d70d4bfa7e1ada5d4247ad9f482d2ed191eb01dddd8da3c14234a418a22498f8
 Status: Downloaded newer image for zookeeper:latest
 docker.io/library/zookeeper:latest
 ```
-##ZK 镜像的基本使用
-###启动zk镜像：
+## ZK 镜像的基本使用
+### 启动zk镜像：
 ```
 PS C:\Windows\system32> docker run --name my_zookeeper -d zookeeper:latest
 ```
@@ -37,7 +37,7 @@ ZooKeeper JMX enabled by default
 Using config: /conf/zoo.cfg
 ...
 ```
-###使用 ZK 命令行客户端连接 ZK
+### 使用 ZK 命令行客户端连接 ZK
 我们可以通过 Docker 的 link 机制来对这个 ZK 容器进行访问. 执行如下命令:
 ```
 docker run -it --rm --link my_zookeeper:zookeeper zookeeper zkCli.sh -server zookeeper
@@ -101,11 +101,7 @@ ZOO_MY_ID 和 ZOO_SERVERS 是搭建 ZK 集群需要设置的两个环境变量, 
 这里我放在D盘目录下：
 ```
 PS D:\work-notes\ZK> ls
-
-
-    目录: D:\work-notes\ZK
-
-
+目录: D:\work-notes\ZK
 Mode                 LastWriteTime         Length Name
 ----                 -------------         ------ ----
 -a----         2021/7/23      0:59            917 docker-compose.yml
