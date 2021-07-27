@@ -1,4 +1,4 @@
-##镜像下载
+## 镜像下载
 首先执行如下命令:
 ```
 docker pull zookeeper
@@ -59,7 +59,7 @@ WatchedEvent state:SyncConnected type:None path:null
 [zk: zookeeper(CONNECTED) 2]
 
 ```
-##ZK 集群的搭建
+## ZK 集群的搭建
 我们的目标是创建在本地docker容器下创建一个zookeeper的伪集群，这里可以直接使用 docker-compose 来启动 ZK 集群.
 首先创建一个名为 docker-compose.yml 的文件, 其内容如下:
 ```
@@ -123,7 +123,7 @@ zoo1                "/docker-entrypoint.…"   zoo1                running      
 zoo2                "/docker-entrypoint.…"   zoo2                running             0.0.0.0:2182->2181/tcp, :::2182->2181/tcp, 2888/tcp, 3888/tcp, 8080/tcp
 zoo3                "/docker-entrypoint.…"   zoo3                running             0.0.0.0:2183->2181/tcp, :::2183->2181/tcp, 2888/tcp, 3888/tcp, 8080/tcp
 ```
-##使用 Docker 命令行客户端连接 ZK 集群
+## 使用 Docker 命令行客户端连接 ZK 集群
 通过 docker-compose ps 命令, 我们知道启动的 ZK 集群的三个主机名分别是 zoo1, zoo2, zoo3, 因此我们分别 link 它们即可:
 
 ```
