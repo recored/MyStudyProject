@@ -4,7 +4,7 @@
 
 创建一个自带映射端口的容器`docker run -it -v /data:/data -p 1234:22 ubuntu bash`  
 ```
-PS D:\work-notes\ZK> docker run -p 55555:22 -v /data:/data -d ubuntu
+PS D:\work-notes\ZK> docker run -it -v /data:/data -p 1234:22 ubuntu bash
 root@092f4b417ed9:/#
 ```
 这里进入的是docker的命令行界面，可以在上面进行操作了
