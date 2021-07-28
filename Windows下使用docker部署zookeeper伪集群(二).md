@@ -48,15 +48,6 @@ passwd: password updated successfully
 输入密码后，使用xshell工具连接127.0.0.1:1234，就与基本的ubuntu环境无异了
 ## 安装vi工具
 执行命令`apt-get install vim`  
-安装完成后即可启动ssh
-```
-root@092f4b417ed9:/usr/bin# service ssh status
- * sshd is not running
-root@092f4b417ed9:/usr/bin# service ssh restart
- * Restarting OpenBSD Secure Shell server sshd                                                                   [ OK ]
-root@092f4b417ed9:/usr/bin# service ssh status
- * sshd is running
-```
 此时apt下载速度大概在100kb/s，白瞎我的百兆带宽，下一步我们需要更新一下我们的apt源
 ```
 root@092f4b417ed9:/# sed -i s@/archive.ubuntu.com/@/mirrors.aliyun.com/@g /etc/apt/sources.list
