@@ -6,7 +6,7 @@ RUN：在容器内执行对应的指令
 COPY：复制指令，从上下文目录中复制文件或者目录到容器里指定路径。  
 ADD：和 COPY 的使用格类似  
 CMD：类似于 RUN 指令，用于运行程序，但二者运行的时间点不同:  
-	·CMD 在docker run 时运行。
+	·CMD 在docker run 时运行。  
 	·RUN 是在 docker build时执行。  
 ENTRYPOINT  
 ENV：定义环境变量  
