@@ -17,7 +17,7 @@ RUN pip install \
 	django \
 	uwsgi
 ```
-我们已经使用环境在对应目录下生成过django的项目，应此这里我们可以直接使用docker-compose.yml生成并启动容器环境： 
+我们已经使用环境在对应目录下生成过django的项目，因此这里我们可以直接使用docker-compose.yml生成并启动容器环境： 
 ```
 version: '3'
 
@@ -148,7 +148,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 ]
 ```
-这里在Django生成下是有说明的 
+这里在Django生成下是有说明的： 
 ```
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.2/topics/http/urls/
